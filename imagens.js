@@ -25,3 +25,12 @@ function preload(){
   somPoint = loadSound("sons/ponto.wav");
 }
 
+function keyPressed() {
+  if (key === 'p' || key === 'P') { // Verifica se a tecla 'p' ou 'P' foi pressionada
+    if (somTrilha.isPlaying()) { // Verifica se o som está sendo reproduzido
+      somTrilha.pause(); // Pausa o som
+    } else {
+      somTrilha.loop(); // Se o som estiver pausado, retoma a reprodução
+    }
+  }
+}

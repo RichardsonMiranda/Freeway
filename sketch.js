@@ -2,6 +2,7 @@
 function setup() {
   createCanvas(700, 500); // Cria um canvas com largura de 700 e altura de 500 pixels
   somTrilha.loop(); // Som da trila começa junto com o jogo
+  keyPressed();
 }
 
 // Função de desenho, é executada continuamente

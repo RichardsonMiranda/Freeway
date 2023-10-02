@@ -17,6 +17,12 @@ function movimentaPersonagem(){
    if (keyIsDown(DOWN_ARROW)){ // Move para baixo ao pressionar a seta para baixo
     yPersonagem += 3;
   }
+  if (keyIsDown(LEFT_ARROW)){ // Move para a esquerda ao pressionar a seta para a esquerda
+    xPersonagem -= 3;
+  }
+  if (keyIsDown(RIGHT_ARROW)){ // Move para a direita ao pressionar a seta para a direita
+    xPersonagem += 3;
+  }
 }
 
 // Função para verificar colisões
@@ -50,5 +56,6 @@ function pontos(){
     meusPontos  += 1; // Adiciona um ponto à pontuação
     voltaPersonagem(); // Retorna o personagem para a posição inicial
     somPoint.play();
+    aumentaVelocidade(); // Chama a função para aumentar a velocidade
   }
 }
