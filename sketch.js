@@ -1,8 +1,8 @@
 // Função de configuração, é executada uma vez quando o programa inicia
 function setup() {
   createCanvas(700, 500); // Cria um canvas com largura de 700 e altura de 500 pixels
-  somTrilha.loop(); // Som da trila começa junto com o jogo
-  keyPressed();
+  //somTrilha.loop(); // Som da trila começa junto com o jogo
+//  keyPressed();
 }
 
 // Função de desenho, é executada continuamente
@@ -16,4 +16,5 @@ function draw() {
   verificaColisao();// Verifica se houve colisão entre o personagem e os carros
   incluiPontos();// Exibe a pontuação na tela
   pontos(); // Atualiza os pontos e verifica se o personagem passou pela linha superior
+  retornaPersonagem();
 }
